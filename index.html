@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="video-background">
+    <video autoplay muted loop>
+      <source 
+      src="https://media.istockphoto.com/id/1364522044/pt/v%C3%ADdeo/raising-drone-shot-of-a-coffee-plantation-in-a-mountain.mp4?s=mp4-640x640-is&k=20&c=UKK8ZljSB8xgfSJTOMb2IL3eSnEQYFhBENg5nNUiiLg="
+      type="video/mp4">
+    </video>
+
+  </div>
+    <div class="fundo-imagem"></div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+             <h2>Seja bem-vindo!</h2>
+            <p>Site em desenvolvimento !!!<br> os resultados podem não ser precisos.⚠️</p>
+            <button onclick="fecharModal()">Entrar</button>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="logo">
+            <img src="https://images.surferseo.art/40355aba-2eef-4f4e-9b80-ac4811980474.png" alt="Logo">
+        </div>
+        <div class="search-container">
+            <form action="/pesquisar" method="GET">
+                <input type="text" id="searchInput" name="q" placeholder="Pesquisar...">
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Bem-vindo</h1>
+        <h2>Descubra ferramentas para otimizar seu trabalho.</h2>
+        <p>Por favor, aperte o menu e escolha uma das opções abaixo:</p>
+        <button class="menu-btn" onclick="mostrarMenu()">Menu</button>
+        <div id="menu" class="menu">
+            <button class="menu-item" onclick="location.href='adubacao.html'">Calcular Adubação</button>
+            <button class="menu-item" onclick="location.href='remedio.html'">Calcular Remédio via Solo</button>
+            <button class="menu-item" onclick="location.href='vaporizacao.html'">Calcular Vaporização</button>
+            <button class="menu-item" onclick="location.href='plantio.html'">Calcular Plantio de Café</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copyjoseaugustomoraes2024.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
